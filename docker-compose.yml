@@ -5,8 +5,8 @@ services:
     image: adde2000/php-contact-app:latest
     container_name: php-contact-app
     restart: unless-stopped
-    expose:
-      - "8080"
+    ports:
+      - ":8080:8080"
     networks:
       - webnet
 

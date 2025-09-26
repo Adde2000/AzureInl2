@@ -21,7 +21,7 @@ az vm create \
 
 # Open required ports
 az vm open-port --port 80 --resource-group $RESOURCE_GROUP --name $VM_NAME
-az vm open-port --port 8080 --resource-group $RESOURCE_GROUP --name $VM_NAME --priority 1001
+az vm open-port --port 443 --resource-group $RESOURCE_GROUP --name $VM_NAMEi
 
 # Get IP address
 az vm show --resource-group $RESOURCE_GROUP --name $VM_NAME \

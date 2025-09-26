@@ -7,7 +7,7 @@ WORKDIR /var/www/html
 # Copy application files
 COPY src/ .
 
-# Expose port 8000
+# Expose port 8080
 EXPOSE 8080
 
 # Start PHP's built-in web server
