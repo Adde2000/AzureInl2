@@ -20,5 +20,5 @@ apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin do
 # Add azureuser to docker group
 usermod -aG docker azureuser
 
-# Install NetBird
+# Install NetBird for VPN access to setup Nginx Proxy Manager
 curl -fsSL https://pkgs.netbird.io/install.sh | sh
