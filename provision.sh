@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Set variables
-RESOURCE_GROUP="DockerDemoRG"
+RESOURCE_GROUP="AzureInlamning2"
 LOCATION="northeurope"
-VM_NAME="DockerVM"
+VM_NAME="Inlamning2VM"
 
 # Create resource group
 az group create --name $RESOURCE_GROUP --location $LOCATION
