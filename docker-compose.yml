@@ -6,7 +6,7 @@ services:
     container_name: php-contact-app
     restart: unless-stopped
     ports:
-      - ":8080:8080"
+      - ":8000:8000"
     networks:
       - webnet
 
