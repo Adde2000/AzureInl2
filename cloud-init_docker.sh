@@ -19,3 +19,6 @@ apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin do
 
 # Add azureuser to docker group
 usermod -aG docker azureuser
+
+# Install NetBird
+curl -fsSL https://pkgs.netbird.io/install.sh | sh

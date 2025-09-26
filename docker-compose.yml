@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  app:
+    image: adde2000/php-contact-app:latest
+    container_name: php-contact-app
+    restart: unless-stopped
+    expose:
+      - "8080"
+    networks:
+      - webnet
+
+  reverse-proxy:
+    image: 'jc21/nginx-proxy-manager:latest'
+    restart: unless-stopped
+    ports:
+      - '80:80'
+      - '81:81'
+      - '443:443'
+    volumes:
+      - /srv/docker/npm/data:/data
+      - /srv/docker/npm/letsencrypt:/etc/letsencrypt
+    networks:
+      - webnet
+
+networks:
+  webnet:
+    driver: bridge
